@@ -1,0 +1,12 @@
+Enter Expression:
+(2+3)*5
+Valid Expression:
+Number of identifiers=3
+Identifier are present
+2
+3
+5
+Number of operators=2
+operators present are
++
+*

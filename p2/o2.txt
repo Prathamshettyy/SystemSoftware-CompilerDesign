@@ -1,0 +1,9 @@
+i)
+Enter an expression:
+21/0
+Divide by Zero error
+
+ii)
+Enter an expression:
+(2+5)*(1+2)
+21

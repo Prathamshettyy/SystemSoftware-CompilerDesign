@@ -1,0 +1,9 @@
+i)
+Enter the input:
+aaab
+Valid String
+
+ii)
+Enter the input:
+abab
+Invalid String

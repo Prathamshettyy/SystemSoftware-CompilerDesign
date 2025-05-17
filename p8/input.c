@@ -1,11 +1,7 @@
+#include<stdio.h>
 void main()
 { 
-    int a;
-    float bc;
-    char c;
-    char ch;
-    if(a == 80)
-        printf("Good");
-    else
-        printf("Bad");
+    int a=2,b=3,sum;
+    sum=a+b;
+    printf("Result=%d\n",sum);
 }

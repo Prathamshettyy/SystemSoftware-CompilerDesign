@@ -1,40 +1,35 @@
 %{
 #include <stdio.h>
-#include "y.tab.h"   // For token definitions like KEY
+#include "y.tab.h"   
 extern YYSTYPE yylval;
 %}
 
 %%
 
-// Match keywords
-"int"|"char"|"bool"|"float"|"void"|"for"|"do"|"while"|"if"|"else"|"return" {
-    printf("keyword is %s\n", yytext);
+"int"|"char"|"bool"|"float"|"void"|"main"|"for"|"do"|"while"|"if"|"else"|"return" {
+    printf("%s is a keyword\n", yytext);
     return KEY;
 }
 
-// Match identifiers (variable names, function names, etc.)
 [a-zA-Z_][a-zA-Z0-9_]* {
-    printf("identifier is %s\n", yytext);
+    printf("%s is a identifier\n", yytext);
     return ID;
 }
 
-// Match numbers
 [0-9]+ {
-    printf("number is %s\n", yytext);
-    return NUM;
+    printf("%s is a number\n", yytext);
+    return DIGIT;
 }
 
-// Match operators
 "=="|"=" {
-    printf("operator is %s\n", yytext);
+    printf("%s is a operator\n", yytext);
     return OP;
 }
 
-// Ignore whitespace
-[ \t\n]+ ;
+[ \t\n]+   ;
 
-// Catch everything else (punctuation like semicolons, parentheses, etc.)
 .   ;
+
 %%
 
 int yywrap() {

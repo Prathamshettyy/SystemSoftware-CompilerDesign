@@ -1,0 +1,27 @@
+include is a identifier
+stdio is a identifier
+h is a identifier
+void is a keyword
+main is a keyword
+int is a keyword
+a is a identifier
+= is a operator
+2 is a number
+b is a identifier
+= is a operator
+3 is a number
+sum is a identifier
+sum is a identifier
+= is a operator
+a is a identifier
+b is a identifier
+printf is a identifier
+Result is a identifier
+= is a operator
+d is a identifier
+n is a identifier
+sum is a identifier
+numbers = 2
+Keywords = 3
+Identifiers = 14
+operators = 4

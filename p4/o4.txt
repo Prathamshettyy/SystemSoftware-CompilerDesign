@@ -1,0 +1,34 @@
+Grammar
+A->aBa
+B->bB
+B->@
+
+first={a,b,@}
+follow={$,a}
+
+Predictive parsing table for the given grammar :
+
+-------------------------------------------------------------------
+                              a                             b                             $
+-------------------------------------------------------------------
+A                             A->aBa                        EMPTY                         EMPTY
+-------------------------------------------------------------------
+B                             B->@                          B->bB                         EMPTY
+-------------------------------------------------------------------
+Enter the input string terminated with $ to parse:-abba$
+
+
+Stack    Input  Action
+-------------------------------------------------------------------
+A$              abba$           Apply production A->aBa
+aBa$            abba$           Matched a
+Ba$             bba$            Apply production B->bB
+bBa$            bba$            Matched b
+Ba$             ba$             Apply production B->bB
+bBa$            ba$             Matched b
+Ba$             a$              Apply production B->@
+a$              a$              Matched a
+$               $
+-------------------------------------------------------------------
+
+Valid String - Accepted
