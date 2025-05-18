@@ -5,12 +5,12 @@ char a[16],ac[20],stk[15],act[10];
 void check();
 void main()
 {
-puts("GRAMMAR is E->E+E \n E->E*E \n E->(E) \n E->id");
+puts("GRAMMAR is \n E->E+E \n E->E*E \n E->(E) \n E->id");
 puts("enter input string ");
 gets(a);
 c=strlen(a);
 strcpy(act,"SHIFT->");
-puts("stack \t input \t action");
+puts("--Stack--|--Input--|--Action--");
 for(i=0; j<c; i++,j++)
 {
 if(a[j]=='i' && a[j+1]=='d')

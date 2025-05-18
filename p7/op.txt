@@ -1,0 +1,5 @@
+Enter input file name:
+file1.c
+Enter output file name:
+file2.c
+Total number of comment lines is: 6
